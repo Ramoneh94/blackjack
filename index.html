@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="example.css" />
+    <script src="jquery-1.7.min.js"></script>
+
+
+
+</head>
+
+<!-- basic outline of the game, nothing really important here -->
+
+<body>
+    <h1>JavaScript Blackjack </h1>
+    <!-- load the images before everything else -->
+    <img class="preload" src="img/cards.png" />
+
+
+
+    <div class="textupdates" id="textUpdates">
+        Press 'New Game' to begin!
+    </div>
+
+    <div class="buttonbox" id="newgame">
+        <button alt="play" id="play">New Game</button>
+    </div>
+    <div class="buttonbox hidden" id="buttonBox">
+        <button alt="hit" id="hit">Hit</button>
+        <button alt="stay" id="stay">Stay</button>
+    </div>
+    <table>
+        <tr>
+            <th id="phand">
+                Your Hand
+            </th>
+            <th id="dhand">
+                Dealer's Hand
+            </th>
+        </tr>
+        <tr>
+            <td id="pcards">No cards dealt yet</td>
+            <td id="dcards">No cards dealt yet</td>
+
+        </tr>
+    </table>
+    <div id="card-table">
+        <button id="deal">DEAL</button>
+    </div>
+    <div id="tracker" class="buttonbox">
+        <p>Wins: 0 Draws: 0 Losses: 0</p>
+    </div>
+
+    <script src="cards.js"></script>
+    <script src="example.js"></script>
+    <script src="game.js"></script>
+
+</body>
+
+
+</html>
